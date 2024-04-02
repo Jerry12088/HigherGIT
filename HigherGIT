@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# Task 1: Cloning and Forking
+
+# Cloning a Repository
+git clone <repository_url>
+cd <repository_name>
+
+# Forking a Repository
+# Navigate to the repository on GitHub and click on the "Fork" button.
+
+# Task 2: Managing Branches
+
+# Creating and Switching Branches
+git checkout -b feature-update
+
+# Making Changes and Committing
+# Make changes to files
+git add .
+git commit -m "Updated feature"
+
+# Merging Changes
+git checkout main
+git merge feature-update
+
+# Task 3: Handling Conflicts
+
+# Creating Conflicts
+# Make conflicting changes to the same file
+git add .
+git commit -m "Conflicting changes"
+
+# Resolving Conflicts
+git checkout -b conflict-resolution
+# Resolve conflicts manually in the file
+git add .
+git commit -m "Resolved conflicts"
+git checkout main
+git merge conflict-resolution
+
+# Task 4: GitHub Pages
+
+# Enabling GitHub Pages
+# Create `index.html` file and add content.
+# Go to repository settings on GitHub, scroll down to GitHub Pages section, select `main` branch, and save.
+
+# Accessing the Published Page
+# Visit `https://<username>.github.io/<repository_name>`.
+
+# Task 5: Open Source Exploration
+
+# Exploring Open Source Projects
+# Search for projects on GitHub, navigate to project pages, explore documentation, issues, and contribution guidelines.
+
+# Opening an Issue
+# Click on "Issues" tab in the project repository, then "New Issue", and fill out the issue template with your suggestion, bug report, or question.
